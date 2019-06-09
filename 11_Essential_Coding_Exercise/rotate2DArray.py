@@ -1,7 +1,5 @@
 import copy
 
-
-
 def rotate_sub(i,j,n):
     return j,n-1-i
 # Implement your function below.
@@ -14,7 +12,6 @@ def rotate(given_array, n):
         for j in range(n):
             new_i, new_j = rotate_sub(i,j,n)
             rotated[new_i][new_j] = given_array[i][j]
-
     return rotated
 
 
